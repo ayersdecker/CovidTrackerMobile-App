@@ -1,0 +1,32 @@
+adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
+adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher_round.xml
+background;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
+background;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher_round.xml
+cache-path;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile Android\COVID Mobile Android\obj\Debug\110\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\110\res\values\colors.xml
+color;obj\Debug\110\res\values\ic_launcher_background.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\110\res\layout\activity_main.xml
+dimen;obj\Debug\110\res\values\dimens.xml
+external-cache-path;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile Android\COVID Mobile Android\obj\Debug\110\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile Android\COVID Mobile Android\obj\Debug\110\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
+foreground;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher_round.xml
+item;obj\Debug\110\res\menu\navigation.xml
+item;obj\Debug\110\res\values\styles.xml
+menu;obj\Debug\110\res\menu\navigation.xml
+path;obj\Debug\110\res\drawable\ic_dashboard_black_24dp.xml
+path;obj\Debug\110\res\drawable\ic_home_black_24dp.xml
+path;obj\Debug\110\res\drawable\ic_notifications_black_24dp.xml
+paths;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile Android\COVID Mobile Android\obj\Debug\110\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+RelativeLayout;obj\Debug\110\res\layout\activity_main.xml
+resources;obj\Debug\110\res\values\colors.xml
+resources;obj\Debug\110\res\values\dimens.xml
+resources;obj\Debug\110\res\values\ic_launcher_background.xml
+resources;obj\Debug\110\res\values\strings.xml
+resources;obj\Debug\110\res\values\styles.xml
+string;obj\Debug\110\res\values\strings.xml
+style;obj\Debug\110\res\values\styles.xml
+TextView;obj\Debug\110\res\layout\activity_main.xml
+vector;obj\Debug\110\res\drawable\ic_dashboard_black_24dp.xml
+vector;obj\Debug\110\res\drawable\ic_home_black_24dp.xml
+vector;obj\Debug\110\res\drawable\ic_notifications_black_24dp.xml

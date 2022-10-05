@@ -1,0 +1,37 @@
+adaptive-icon;obj\Release\120\res\mipmap-anydpi-v26\ic_launcher.xml
+adaptive-icon;obj\Release\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
+background;obj\Release\120\res\mipmap-anydpi-v26\ic_launcher.xml
+background;obj\Release\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
+Button;obj\Release\120\res\layout\settings.xml
+cache-path;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Tracker Mobile\COVID Tracker Mobile\obj\Release\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Release\120\res\values\colors.xml
+color;obj\Release\120\res\values\ic_launcher_background.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;obj\Release\120\res\layout\datasets.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;obj\Release\120\res\layout\home.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;obj\Release\120\res\layout\settings.xml
+DigitalClock;obj\Release\120\res\layout\home.xml
+dimen;obj\Release\120\res\values\dimens.xml
+external-cache-path;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Tracker Mobile\COVID Tracker Mobile\obj\Release\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Tracker Mobile\COVID Tracker Mobile\obj\Release\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Release\120\res\mipmap-anydpi-v26\ic_launcher.xml
+foreground;obj\Release\120\res\mipmap-anydpi-v26\ic_launcher_round.xml
+item;obj\Release\120\res\menu\navigation.xml
+item;obj\Release\120\res\values\styles.xml
+menu;obj\Release\120\res\menu\navigation.xml
+path;obj\Release\120\res\drawable\ic_dashboard_black_24dp.xml
+path;obj\Release\120\res\drawable\ic_home_black_24dp.xml
+path;obj\Release\120\res\drawable\ic_notifications_black_24dp.xml
+paths;C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Tracker Mobile\COVID Tracker Mobile\obj\Release\120\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+RelativeLayout;obj\Release\120\res\layout\datasets.xml
+RelativeLayout;obj\Release\120\res\layout\home.xml
+RelativeLayout;obj\Release\120\res\layout\settings.xml
+resources;obj\Release\120\res\values\colors.xml
+resources;obj\Release\120\res\values\dimens.xml
+resources;obj\Release\120\res\values\ic_launcher_background.xml
+resources;obj\Release\120\res\values\strings.xml
+resources;obj\Release\120\res\values\styles.xml
+string;obj\Release\120\res\values\strings.xml
+style;obj\Release\120\res\values\styles.xml
+vector;obj\Release\120\res\drawable\ic_dashboard_black_24dp.xml
+vector;obj\Release\120\res\drawable\ic_home_black_24dp.xml
+vector;obj\Release\120\res\drawable\ic_notifications_black_24dp.xml

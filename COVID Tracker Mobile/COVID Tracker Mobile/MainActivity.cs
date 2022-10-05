@@ -42,7 +42,7 @@ namespace COVID_Tracker_Mobile
             {
                 case Resource.Id.navigation_home:
                     SetContentView(Resource.Layout.home);
-                     return true;
+                    return true;
                 case Resource.Id.navigation_dashboard:
                     SetContentView(Resource.Layout.datasets);
                     return true;

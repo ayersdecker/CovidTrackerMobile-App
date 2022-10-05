@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w49uUGrU8uC38IgDyhizsVjQbMsA6paqtB3xR/8+HiQ8RD8/NtL7mgUe8tWdETHASPyqlm+RMjHlQcNoK47s2A==",
+  "dgSpecHash": "R0PUB0Py+dozNlq0VC8/gzUz7q6E48HT3Og79qpNGLFx29dopYcjG3fjmAwsdI2xCxjXKKpp6DEKIEiikIn25w==",
   "success": true,
-  "projectFilePath": "F:\\project-i---the-conversion-ayersdecker\\COVID Tracker Mobile\\COVID Tracker Mobile\\COVID Tracker Mobile.csproj",
+  "projectFilePath": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Tracker Mobile\\COVID Tracker Mobile\\COVID Tracker Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\draye\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.3\\xamarin.androidx.activity.1.1.0.3.nupkg.sha512",

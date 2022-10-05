@@ -1701,11 +1701,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\project-i---the-conversion-ayersdecker\\COVID Tracker Mobile\\COVID Tracker Mobile\\COVID Tracker Mobile.csproj",
+      "projectUniqueName": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Tracker Mobile\\COVID Tracker Mobile\\COVID Tracker Mobile.csproj",
       "projectName": "COVID Tracker Mobile",
-      "projectPath": "F:\\project-i---the-conversion-ayersdecker\\COVID Tracker Mobile\\COVID Tracker Mobile\\COVID Tracker Mobile.csproj",
+      "projectPath": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Tracker Mobile\\COVID Tracker Mobile\\COVID Tracker Mobile.csproj",
       "packagesPath": "C:\\Users\\draye\\.nuget\\packages\\",
-      "outputPath": "F:\\project-i---the-conversion-ayersdecker\\COVID Tracker Mobile\\COVID Tracker Mobile\\obj\\",
+      "outputPath": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Tracker Mobile\\COVID Tracker Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
