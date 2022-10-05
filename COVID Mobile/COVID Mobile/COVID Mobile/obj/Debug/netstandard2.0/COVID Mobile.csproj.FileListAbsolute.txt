@@ -1,0 +1,21 @@
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID Mobile.deps.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID Mobile.dll
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID Mobile.pdb
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.csproj.AssemblyReference.cache
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.AssemblyInfoInputs.cache
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.AssemblyInfo.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.csproj.CoreCompileInputs.cache
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.dll
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\refint\COVID Mobile.dll
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.pdb
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\ref\COVID Mobile.dll
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\home.xaml.g.cs
