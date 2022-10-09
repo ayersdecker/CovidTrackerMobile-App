@@ -5,11 +5,6 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobil
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.GeneratedMSBuildEditorConfig.editorconfig
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.AssemblyInfoInputs.cache
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.AssemblyInfo.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.csproj.CoreCompileInputs.cache
@@ -18,4 +13,6 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobil
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\refint\COVID Mobile.dll
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.pdb
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\ref\COVID Mobile.dll
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\home.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\DataPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs

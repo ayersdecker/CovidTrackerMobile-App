@@ -634,3 +634,4 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_Convert
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\forest_main.png
