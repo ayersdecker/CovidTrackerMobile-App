@@ -9866,7 +9866,7 @@ public final class R {
     public static final int btn_radio_off_to_on_mtrl_animation=0x7f07005c;
     public static final int btn_radio_on_mtrl=0x7f07005d;
     public static final int btn_radio_on_to_off_mtrl_animation=0x7f07005e;
-    public static final int covidlogo=0x7f07005f;
+    public static final int covid_logo=0x7f07005f;
     public static final int design_fab_background=0x7f070060;
     public static final int design_ic_visibility=0x7f070061;
     public static final int design_ic_visibility_off=0x7f070062;

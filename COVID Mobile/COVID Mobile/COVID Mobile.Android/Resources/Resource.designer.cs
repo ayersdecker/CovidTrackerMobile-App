@@ -16517,7 +16517,7 @@ namespace COVID_Mobile.Droid
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int COVIDLogo = 2131165279;
+			public const int COVID_Logo = 2131165279;
 			
 			// aapt resource value: 0x7F070060
 			public const int design_fab_background = 2131165280;

@@ -50,6 +50,7 @@
                     x:Name="PasswordEntry"
                     Visual="Material"
                     Keyboard="Text"
+                    IsPassword="True"
                     ReturnType="Done"
                     ClearButtonVisibility="WhileEditing"/>
                 
