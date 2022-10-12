@@ -1,10 +1,13 @@
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.csproj.AssemblyReference.cache
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.GeneratedMSBuildEditorConfig.editorconfig
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID Mobile.deps.json
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID Mobile.dll
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID Mobile.pdb
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.csproj.AssemblyReference.cache
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.GeneratedMSBuildEditorConfig.editorconfig
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\DataPage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.AssemblyInfoInputs.cache
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.AssemblyInfo.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.csproj.CoreCompileInputs.cache
@@ -13,6 +16,3 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobil
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\refint\COVID Mobile.dll
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.pdb
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\ref\COVID Mobile.dll
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\DataPage.xaml.g.cs
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs

@@ -4,10 +4,33 @@
              x:Class="COVID_Mobile.Views.DataPage"
              Title="COVID-19 Mobile Tracker">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout HorizontalOptions="Center">
+            <Path 
+                Margin="10"
+                Stroke="Black"
+                Aspect="Uniform"
+                StrokeThickness="4"
+                Opacity=".5"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                HeightRequest="350"
+                WidthRequest="350"
+                Data="M1,1
+                L99,1 99,99 1,99Z"
+            />
+            <Polyline 
+                Stroke="Green"
+                Aspect="Uniform"
+                Margin="10"
+                StrokeThickness="3"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                WidthRequest="350"
+                HeightRequest="350"
+                x:Name="GraphData"
+             />
+
+
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

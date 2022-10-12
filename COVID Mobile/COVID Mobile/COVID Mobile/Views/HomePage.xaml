@@ -1,17 +1,72 @@
-﻿<?xml version="1.0 encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="COVID_Mobile.Views.HomePage"
-             Title="COVID-19 Mobile Tracker">
+             Title="COVID-19 Mobile Tracker"
+             >
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand"
-                TextColor="Gray"/>
-            <Image Source="C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\Resources\drawable\forest_main.png"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-        </StackLayout>
+        <Grid>
+            <Image Source="forest_main.png" Aspect="AspectFill" Opacity=".5"/>
+            <StackLayout >
+
+            <ContentView Padding="10" BackgroundColor="White">
+            <Label 
+                Text="Welcome Back!"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="Center"
+                TextColor="Gray"
+                FontSize="Large"
+                FontAttributes="Bold"
+                x:Name="WelcomeLabel"/>
+                    
+                </ContentView>
+
+                <Image Source="COVID_Logo.png"
+                       Margin="0,50,0,0"
+                       WidthRequest="300"
+                       Opacity=".5"/>
+
+                <Entry
+                    Margin="10,100,10,10"
+                    HorizontalTextAlignment="Center"
+                    Background="White"
+                    Placeholder="Username"
+                    TextColor="Gray"
+                    PlaceholderColor="Gray"
+                    x:Name="UsernameEntry"
+                    Visual="Material"
+                    Keyboard="Text"
+                    ReturnType="Next"
+                    ClearButtonVisibility="WhileEditing"/>
+                
+                <Entry
+                    Margin="10,10,10,20"
+                    HorizontalTextAlignment="Center"
+                    Background="White"
+                    Placeholder="Password"
+                    TextColor="Gray"
+                    PlaceholderColor="Gray"
+                    x:Name="PasswordEntry"
+                    Visual="Material"
+                    Keyboard="Text"
+                    ReturnType="Done"
+                    ClearButtonVisibility="WhileEditing"/>
+                
+                <Button 
+                    BackgroundColor="DodgerBlue"
+                    Text="Submit"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontFamily="monospace"
+                    FontSize="Small"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    x:Name="LoginSubmit"
+                    Clicked="LoginSubmit_Clicked"/>
+
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

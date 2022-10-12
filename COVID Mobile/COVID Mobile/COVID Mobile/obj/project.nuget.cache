@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "deXRZKomMgHT2jAj8mZbuuJG6i2n4vCDOqsLdj66vrxnMspkXBIYxMKqyt2hGjnRWGBZEj4uWu8wfqeQ+E8HTA==",
+  "dgSpecHash": "Ic6iq1lUnw01STTkpjHsTKv7cFBrZZsI6VZwPyl59xH772PGlylwpViqXan9AdpBh2R0aIlm0SwrgeGQha9nng==",
   "success": true,
   "projectFilePath": "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ayers\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ayers\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\ayers\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\ayers\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\ayers\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\ayers\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\ayers\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512"
   ],
   "logs": []
 }

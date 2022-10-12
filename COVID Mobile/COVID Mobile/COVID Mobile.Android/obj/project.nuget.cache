@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K1g43CE8WQI//HAjMzU+2QtTiVt1b1m+ADsafGZeIXFoiwBORpRvVW9Co00KPJZvm/9YZfUbQUXTkZTYUgQgIQ==",
+  "dgSpecHash": "7j4MK8ke/dCGIkL4XmSiCxwvNjvVKS/xh+q+e38y/+ytOPYAakgoKFJiW3fIsiVEuuBwXaBVtNZy/M4Z+ylogw==",
   "success": true,
   "projectFilePath": "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\COVID Mobile.Android.csproj",
   "expectedPackageFiles": [
@@ -63,5 +63,26 @@
     "C:\\Users\\ayers\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\ayers\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.3 to 1.7.0. Reference the package directly from the project to select a different version. \r\n COVID Mobile.Android -> COVID Mobile -> Xamarin.Essentials (>= 1.7.3) \r\n COVID Mobile.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v12.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2515 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n COVID Mobile.Android -> COVID Mobile -> Xamarin.Forms (>= 5.0.0.2515) \r\n COVID Mobile.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v12.0"
+      ]
+    }
+  ]
 }
