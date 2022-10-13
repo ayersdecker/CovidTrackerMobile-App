@@ -30,10 +30,24 @@
         </ResourceDictionary>
     </Shell.Resources>
     
-    <TabBar>
-        <ShellContent Title="Login" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
-        <ShellContent Title="Data" Icon="icon_feed.png" Route="DataPage" ContentTemplate="{DataTemplate local:DataPage}"/>
-        <ShellContent Title="Settings" Icon="icon_feed.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}"/>
+    <TabBar x:Name="NavBar">
+        <ShellContent Title="Login" 
+                      Icon="icon_about.png" 
+                      Route="HomePage" 
+                      ContentTemplate="{DataTemplate local:HomePage}" 
+                      x:Name="LoginTab"/>
+        <ShellContent Title="Data" 
+                      Icon="icon_feed.png" 
+                      IsEnabled="False"
+                      Route="DataPage" 
+                      ContentTemplate="{DataTemplate local:DataPage}" 
+                      x:Name="DataTab"/>
+        <ShellContent Title="Settings" 
+                      Icon="icon_feed.png"
+                      IsEnabled="False"
+                      Route="SettingsPage" 
+                      ContentTemplate="{DataTemplate local:SettingsPage}" 
+                      x:Name="SettingsTab"/>
     </TabBar>
 
     <!--

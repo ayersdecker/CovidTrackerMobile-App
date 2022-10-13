@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,27 +16,43 @@ namespace COVID_Mobile.Views
         public HomePage()
         {
             InitializeComponent();
-
         }
 
         private void LoginSubmit_Clicked(object sender, EventArgs e)
         {
-            Credential deckerLogin = new Credential("DeckerAyers", "1234");
+            Login_load.IsRunning = true;
+            Credential deckerLogin = new Credential("Decker Ayers", "dra2214@rit.edu", "1234");
+
+            bool passedObjective = false;
 
             List<Credential> credentialList = new List<Credential>();
             credentialList.Add(deckerLogin);
 
-            //List<Credential> credentialRun = new List<Credential>(from credential in credentialList
-            //    where credential.Username == UsernameEntry.Text && credential.Password == PasswordEntry.Text
-            //    select credential);
 
             foreach(Credential credential in credentialList)
-            {
-                if(credential.Username == UsernameEntry.Text && credential.Password == PasswordEntry.Text) 
+            {   
+                if(credential.Username == EmailEntry.Text && credential.Password == PasswordEntry.Text) 
                 { 
                     WelcomeLabel.Text = "Welcome " + credential.ToString() + "!";
+                    Login_load.IsRunning = false;
+                    passedObjective = true;
                 }
+                
             }
+
+            if (!passedObjective)
+            {
+                Login_load.IsRunning = false;
+                EmailEntry.Text = EmailEntry.Placeholder;
+                EmailEntry.TextColor = Color.Red;
+                PasswordEntry.Text = PasswordEntry.Placeholder;
+                PasswordEntry.TextColor = Color.Red;
+                WelcomeLabel.TextColor = Color.Red;
+
+                WelcomeLabel.Text = "Incorrect Credentials";
+
+            }
+            
 
         }
 

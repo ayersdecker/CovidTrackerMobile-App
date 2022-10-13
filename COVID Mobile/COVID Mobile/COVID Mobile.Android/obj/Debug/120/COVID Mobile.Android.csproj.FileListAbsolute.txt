@@ -1,3 +1,12 @@
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.Android.dll
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.Android.pdb
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile.apk
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile.aab
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile-Signed.aab
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile-Signed.apk
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile-Signed.apk.idsig
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.dll
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.pdb
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\build.props
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\adb.props
@@ -32,15 +41,6 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\lp\103\jl\file
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\R.txt
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\R.cs.flag
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\COVID Mobile.Android.csproj.CoreCompileInputs.cache
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.Android.dll
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.Android.pdb
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile.apk
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile.aab
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile-Signed.aab
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile-Signed.apk
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile-Signed.apk.idsig
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.dll
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.pdb
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\COVID Mobile.Android.csproj.CopyComplete
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\COVID Mobile.Android.dll
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\COVID Mobile.Android.pdb
@@ -66,6 +66,7 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\x
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\icon_about.png
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\icon_feed.png
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\forest_main.png
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\covid_logo.png
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\uploadflags.txt
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\resolvedassemblies.hash
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\android\assets\COVID Mobile.Android.dll
@@ -635,4 +636,3 @@ C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_Convert
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\res\drawable\covid_logo.png

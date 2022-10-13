@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="COVID_Mobile.Views.HomePage"
-             Title="COVID-19 Mobile Tracker"
-             >
+             Title="COVID-19 Mobile Tracker">
     
     <ContentPage.Content>
         <Grid>
@@ -31,15 +30,14 @@
                     Margin="10,100,10,10"
                     HorizontalTextAlignment="Center"
                     Background="White"
-                    Placeholder="Username"
+                    Placeholder="Email"
                     TextColor="Gray"
                     PlaceholderColor="Gray"
-                    x:Name="UsernameEntry"
+                    x:Name="EmailEntry"
                     Visual="Material"
-                    Keyboard="Text"
+                    Keyboard="Email"
                     ReturnType="Next"
                     ClearButtonVisibility="WhileEditing"/>
-                
                 <Entry
                     Margin="10,10,10,20"
                     HorizontalTextAlignment="Center"
@@ -53,7 +51,6 @@
                     IsPassword="True"
                     ReturnType="Done"
                     ClearButtonVisibility="WhileEditing"/>
-                
                 <Button 
                     BackgroundColor="DodgerBlue"
                     Text="Submit"
@@ -65,7 +62,12 @@
                     HorizontalOptions="Center"
                     WidthRequest="200"
                     x:Name="LoginSubmit"
-                    Clicked="LoginSubmit_Clicked"/>
+                    Clicked="LoginSubmit_Clicked"
+                    CornerRadius="20"/>
+                <ActivityIndicator 
+                   x:Name="Login_load"
+                   IsRunning="False"
+                   VerticalOptions="CenterAndExpand" />
 
             </StackLayout>
         </Grid>

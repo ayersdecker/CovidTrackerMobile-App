@@ -4,10 +4,57 @@
              x:Class="COVID_Mobile.Views.SettingsPage"
              Title="COVID-19 Mobile Tracker">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="15"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ExportData_Button"
+                    Text="Export Data"
+                    TextColor="White"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    CornerRadius="20"/>
+            <Button x:Name="SystemInfo_Button"
+                    Text="System Info"
+                    TextColor="White"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    CornerRadius="20"/>
+            <Button x:Name="Preferences_Button"
+                    Text="Preferences"
+                    TextColor="White"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    CornerRadius="20"/>
+            <Button x:Name="InsertData_Button"
+                    Text="Insert Data"
+                    TextColor="White"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    CornerRadius="20"/>
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

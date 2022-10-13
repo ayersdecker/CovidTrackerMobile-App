@@ -10,8 +10,14 @@ namespace COVID_Mobile
     {
         public AppShell()
         {
+
             InitializeComponent();
-            
+
+        }
+        public void SetNavVis()
+        {
+            DataTab.IsEnabled = true;
+            SettingsTab.IsEnabled = true;
         }
 
     }
