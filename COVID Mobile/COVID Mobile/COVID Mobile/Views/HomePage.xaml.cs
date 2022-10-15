@@ -48,7 +48,6 @@ namespace COVID_Mobile.Views
                 PasswordEntry.Text = PasswordEntry.Placeholder;
                 PasswordEntry.TextColor = Color.Red;
                 WelcomeLabel.TextColor = Color.Red;
-
                 WelcomeLabel.Text = "Incorrect Credentials";
 
             }
