@@ -11,6 +11,9 @@ using NSwag.Collections;
 using Xamarin.Forms;
 using Xamarin.Forms.Shapes;
 using Xamarin.Forms.Xaml;
+using Path = System.IO.Path;
+using Xamarin.Forms.PlatformConfiguration;
+using System.IO.IsolatedStorage;
 
 namespace COVID_Mobile.Views
 {
@@ -22,14 +25,12 @@ namespace COVID_Mobile.Views
 
         // Storage for Variants
         ObservableCollection<string> variantList = new ObservableCollection<string>();
-
         // Storage for Locations
         ObservableCollection<Place> locationList = new ObservableCollection<Place>();
-
-        const string COVID_FILE = "COVID.json";         // COVID JSON File - Used for database purposes
-        const string VARIANT_FILE = "variants.json";    // Variant JSON File - Used for database purposes
-        const string LOCATION_FILE = "locations.json";  // Location JSON File - Used for database purposes
-
+        
+        string covidFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"COVID.json");         // COVID JSON File - Used for database purposes
+        string variantFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"variants.json");    // Variant JSON File - Used for database purposes
+        string locationFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"locations.json");  // Location JSON File - Used for database purposes
 
         public DataPage()
         {
@@ -117,10 +118,10 @@ namespace COVID_Mobile.Views
         private void LoadAllData()
         {
 
-            if (File.Exists(COVID_FILE)) // Test-Loads COVIDs Json
+            if (File.Exists(covidFile)) // Test-Loads COVIDs Json
             {
 
-                StreamReader reader = new StreamReader(COVID_FILE);
+                StreamReader reader = new StreamReader(covidFile);
                 string listRead = reader.ReadToEnd();
                 // Loads data into a temporary Collection List
                 List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
@@ -131,9 +132,9 @@ namespace COVID_Mobile.Views
             }
             else { }
 
-            if (File.Exists(VARIANT_FILE)) // Test-Loads Variants Json 
+            if (File.Exists(variantFile)) // Test-Loads Variants Json 
             {
-                StreamReader reader = new StreamReader(VARIANT_FILE);
+                StreamReader reader = new StreamReader(variantFile);
                 string listRead = reader.ReadToEnd();
                 // Loads data into a temporary Collection List
                 List<string> aVariants = JsonConvert.DeserializeObject<List<string>>(listRead);
@@ -144,9 +145,9 @@ namespace COVID_Mobile.Views
             }
             else { }
 
-            if (File.Exists(LOCATION_FILE)) // Test-Loads Locations Json
+            if (File.Exists(locationFile)) // Test-Loads Locations Json
             {
-                StreamReader reader = new StreamReader(LOCATION_FILE);
+                StreamReader reader = new StreamReader(locationFile);
                 string listRead = reader.ReadToEnd();
                 // Loads data into a temporary Collection List
                 List<Place> aLocationList = JsonConvert.DeserializeObject<List<Place>>(listRead);

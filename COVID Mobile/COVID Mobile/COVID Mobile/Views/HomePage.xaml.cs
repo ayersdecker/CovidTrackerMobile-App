@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -12,7 +13,7 @@ namespace COVID_Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
-        bool test = true;
+        
         
         public HomePage()
         {
@@ -41,9 +42,8 @@ namespace COVID_Mobile.Views
                     EmailEntry.TextColor = Color.Black;
                     PasswordEntry.TextColor = Color.Black;
                     passedObjective = true;
-                    Shell.SetTabBarIsVisible(this, true);
-                }
-                
+                    Shell.SetTabBarIsVisible(this, true);                    
+                } 
             }
 
             if (!passedObjective)
