@@ -5,11 +5,7 @@
        Title="COVID_Mobile"
        x:Class="COVID_Mobile.AppShell">
 
-    <!--
-        The overall app visual hierarchy is defined here, along with navigation.
     
-        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
-    -->
 
     <Shell.Resources>
         <ResourceDictionary>

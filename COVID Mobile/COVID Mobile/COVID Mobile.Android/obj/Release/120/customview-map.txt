@@ -1,0 +1,11 @@
+adaptive-icon;obj\Release\120\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Release\120\res\mipmap-anydpi-v26\icon_round.xml
+background;obj\Release\120\res\mipmap-anydpi-v26\icon.xml
+background;obj\Release\120\res\mipmap-anydpi-v26\icon_round.xml
+color;obj\Release\120\res\values\colors.xml
+foreground;obj\Release\120\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Release\120\res\mipmap-anydpi-v26\icon_round.xml
+item;obj\Release\120\res\values\styles.xml
+resources;obj\Release\120\res\values\colors.xml
+resources;obj\Release\120\res\values\styles.xml
+style;obj\Release\120\res\values\styles.xml
