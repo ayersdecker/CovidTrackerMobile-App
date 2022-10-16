@@ -14,11 +14,6 @@ namespace COVID_Mobile
             InitializeComponent();
 
         }
-        public void SetNavVis()
-        {
-            DataTab.IsEnabled = true;
-            SettingsTab.IsEnabled = true;
-        }
-
+        
     }
 }

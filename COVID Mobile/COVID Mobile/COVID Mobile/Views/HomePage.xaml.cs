@@ -12,10 +12,12 @@ namespace COVID_Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
+        bool test = true;
         
         public HomePage()
         {
             InitializeComponent();
+            Shell.SetTabBarIsVisible(this, false);
         }
 
         private void LoginSubmit_Clicked(object sender, EventArgs e)
@@ -35,7 +37,11 @@ namespace COVID_Mobile.Views
                 { 
                     WelcomeLabel.Text = "Welcome " + credential.ToString() + "!";
                     Login_load.IsRunning = false;
+                    WelcomeLabel.TextColor = Color.Black;
+                    EmailEntry.TextColor = Color.Black;
+                    PasswordEntry.TextColor = Color.Black;
                     passedObjective = true;
+                    Shell.SetTabBarIsVisible(this, true);
                 }
                 
             }
@@ -45,11 +51,11 @@ namespace COVID_Mobile.Views
                 Login_load.IsRunning = false;
                 EmailEntry.Text = EmailEntry.Placeholder;
                 EmailEntry.TextColor = Color.Red;
-                PasswordEntry.Text = PasswordEntry.Placeholder;
+                PasswordEntry.Text = "";
                 PasswordEntry.TextColor = Color.Red;
                 WelcomeLabel.TextColor = Color.Red;
                 WelcomeLabel.Text = "Incorrect Credentials";
-
+                Shell.SetTabBarIsVisible(this, false);
             }
             
 
