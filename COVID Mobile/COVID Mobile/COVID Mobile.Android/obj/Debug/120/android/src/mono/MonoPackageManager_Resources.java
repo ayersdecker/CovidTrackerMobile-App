@@ -9,6 +9,8 @@ public class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"NJsonSchema.dll",
 		"NSwag.Core.dll",
+		"PCLStorage.Abstractions.dll",
+		"PCLStorage.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
