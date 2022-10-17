@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -13,9 +14,11 @@ namespace COVID_Mobile.Views
     public partial class HomePage : ContentPage
     {
         
+        
         public HomePage()
         {
             InitializeComponent();
+            Shell.SetTabBarIsVisible(this, false);
         }
 
         private void LoginSubmit_Clicked(object sender, EventArgs e)
@@ -35,9 +38,12 @@ namespace COVID_Mobile.Views
                 { 
                     WelcomeLabel.Text = "Welcome " + credential.ToString() + "!";
                     Login_load.IsRunning = false;
+                    WelcomeLabel.TextColor = Color.Black;
+                    EmailEntry.TextColor = Color.Black;
+                    PasswordEntry.TextColor = Color.Black;
                     passedObjective = true;
-                }
-                
+                    Shell.SetTabBarIsVisible(this, true);                    
+                } 
             }
 
             if (!passedObjective)
@@ -45,11 +51,11 @@ namespace COVID_Mobile.Views
                 Login_load.IsRunning = false;
                 EmailEntry.Text = EmailEntry.Placeholder;
                 EmailEntry.TextColor = Color.Red;
-                PasswordEntry.Text = PasswordEntry.Placeholder;
+                PasswordEntry.Text = "";
                 PasswordEntry.TextColor = Color.Red;
                 WelcomeLabel.TextColor = Color.Red;
                 WelcomeLabel.Text = "Incorrect Credentials";
-
+                Shell.SetTabBarIsVisible(this, false);
             }
             
 

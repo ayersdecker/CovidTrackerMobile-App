@@ -17,14 +17,15 @@
                 TextColor="Gray"
                 FontSize="Large"
                 FontAttributes="Bold"
-                x:Name="WelcomeLabel"/>
+                x:Name="WelcomeLabel"
+                Opacity=".8"/>
                     
                 </ContentView>
 
                 <Image Source="COVID_Logo.png"
                        Margin="0,50,0,0"
                        WidthRequest="300"
-                       Opacity=".5"/>
+                       Opacity=".7"/>
 
                 <Entry
                     Margin="10,100,10,10"
