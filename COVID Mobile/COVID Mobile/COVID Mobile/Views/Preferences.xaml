@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!--
+    Decker Ayers / COVID-19 Tracking System [Mobile] 2022 VERSION 1
+    
+    -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="COVID_Mobile.Views.Preferences"
+             Title="Preferences">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <!--Width set to 200 in order to Allow background color to proper display-->
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <!--Accent Color Toggle-->
+            <Label
+                Text="Accent Color"
+                TextColor="Black"
+                FontSize="Large"
+                Grid.Row="1"
+                Grid.Column="1"
+                VerticalOptions="Center"/>
+            <Switch
+                Grid.Row="1"
+                Grid.Column="3"
+                VerticalOptions="Center"
+                Toggled="Accent_Toggled"/>
+            <!--Background Color Toggle-->
+            <Label
+                Text="Background Color"
+                TextColor="Black"
+                FontSize="Large"
+                Grid.Row="3"
+                Grid.Column="1"
+                VerticalOptions="Center"/>
+            <Switch
+                Grid.Row="3"
+                Grid.Column="3"
+                VerticalOptions="Center"
+                Toggled="Background_Toggled"/>
+            <!--Dark Mode THEME Toggle-->
+            <Label
+                Text="Dark Mode"
+                TextColor="Black"
+                FontSize="Large"
+                Grid.Row="5"
+                Grid.Column="1"
+                VerticalOptions="Center"/>
+            <Switch
+                Grid.Row="5"
+                Grid.Column="3"
+                VerticalOptions="Center"
+                Toggled="DarkMode_Toggled"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

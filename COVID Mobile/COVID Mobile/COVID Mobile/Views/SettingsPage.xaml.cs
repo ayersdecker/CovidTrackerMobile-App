@@ -16,5 +16,25 @@ namespace COVID_Mobile.Views
         {
             InitializeComponent();
         }
+
+        private void Preferences_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Preferences());
+        }
+
+        private void SystemInfo_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SystemInfo());
+        }
+
+        private void InsertData_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new InsertData());
+        }
+
+        private void ExportData_Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ExportData());
+        }
     }
 }

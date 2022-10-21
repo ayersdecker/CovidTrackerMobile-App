@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="COVID_Mobile.Views.SystemInfo"
+             Title="System Information">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="COVID-19 Tracking System"
+                Margin="10,40,10,10"
+                FontSize="Large"
+                FontAttributes="Bold"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+            <Label Text="Mobile Format VERSION 1.0"
+                Margin="10"
+                FontSize="Medium"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+            <Label Text="Created By: Decker Ayers"
+                Margin="20"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+            <Image 
+                Source="COVID_Logo.png"
+                Margin="10,50,10,50"
+                WidthRequest="300"
+                Opacity="1"
+                HorizontalOptions="Center"/>
+            <Label Text="[ DO NOT DISTRIBUTE ]"
+                Margin="20"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                TextColor="DarkRed"
+                HorizontalOptions="Center"/>
+            <Label Text="For Use Regarding RIT/NTID-MAD 2 Coursework"
+                Margin="10"
+                FontSize="Body"
+                FontAttributes="Italic, Bold"
+                TextColor="Black"
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
