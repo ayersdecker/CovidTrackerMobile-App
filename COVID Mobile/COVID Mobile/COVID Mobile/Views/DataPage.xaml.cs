@@ -14,12 +14,16 @@ using Xamarin.Forms.Xaml;
 using Path = System.IO.Path;
 using Xamarin.Forms.PlatformConfiguration;
 using System.IO.IsolatedStorage;
+using PCLStorage;
+using System.Runtime.CompilerServices;
 
 namespace COVID_Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DataPage : ContentPage
     {
+        
+        
         // Storage for COVID Cases
         ObservableCollection<COVID> covidList = new ObservableCollection<COVID>();
 
@@ -36,6 +40,9 @@ namespace COVID_Mobile.Views
         {
             InitializeComponent();
             LoadAllData();
+            
+            IFolder folder = FileSystem.Current.LocalStorage;
+            
 
             this.GraphInfectData.Points = PointLoadUp(true, true);
             this.GraphMorbidData.Points = PointLoadUp(false, true);
