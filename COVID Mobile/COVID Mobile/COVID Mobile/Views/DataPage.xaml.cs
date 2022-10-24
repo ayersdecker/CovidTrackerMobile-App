@@ -25,7 +25,6 @@ namespace COVID_Mobile.Views
         
         // Storage for COVID Cases
         ObservableCollection<COVID> covidList = new ObservableCollection<COVID>();
-
         // Storage for Variants
         ObservableCollection<string> variantList = new ObservableCollection<string>();
         // Storage for Locations
@@ -39,11 +38,28 @@ namespace COVID_Mobile.Views
         {
             InitializeComponent();
             LoadAllData();
-            
-            
 
-            //this.GraphInfectData.Points = PointLoadUp(true, true);
-            //this.GraphMorbidData.Points = PointLoadUp(false, true);
+            List<COVID> covidTest = new List<COVID>();
+
+            //GraphInfectData.Points = PointLoadUp(true, true);
+            //GraphMorbidData.Points = PointLoadUp(false, true);
+
+            PointCollection infectPoints = new PointCollection();
+            infectPoints.Add(new Point(0, 30));
+            infectPoints.Add(new Point(25, 80));
+            infectPoints.Add(new Point(50, 30));
+            infectPoints.Add(new Point(75, 40));
+            infectPoints.Add(new Point(100, 60));
+            PointCollection morbidPoints = new PointCollection();
+            morbidPoints.Add(new Point(0, 50));
+            morbidPoints.Add(new Point(25, 20));
+            morbidPoints.Add(new Point(50, 70));
+            morbidPoints.Add(new Point(75, 10));
+            morbidPoints.Add(new Point(100, 60));
+
+            GraphInfectData.Points = infectPoints;
+            GraphMorbidData.Points = morbidPoints;
+
 
         }
 

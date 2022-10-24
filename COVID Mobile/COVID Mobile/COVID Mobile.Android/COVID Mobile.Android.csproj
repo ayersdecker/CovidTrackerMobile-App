@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\COVID.json" />
+    <AndroidAsset Include="Assets\locations.json" />
+    <AndroidAsset Include="Assets\COVID.json" />
+    <AndroidAsset Include="Assets\variants.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

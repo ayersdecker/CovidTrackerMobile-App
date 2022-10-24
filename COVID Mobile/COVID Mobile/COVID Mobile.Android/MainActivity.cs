@@ -1,11 +1,13 @@
 ﻿ using System;
-
+using COVID_Mobile;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using COVID_Mobile.Views;
 using Xamarin.Forms;
+using Android.Content.Res;
+using System.IO;
 
 namespace COVID_Mobile.Droid
 {
@@ -20,6 +22,8 @@ namespace COVID_Mobile.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
             
+
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
