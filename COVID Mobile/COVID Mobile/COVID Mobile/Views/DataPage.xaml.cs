@@ -14,7 +14,6 @@ using Xamarin.Forms.Xaml;
 using Path = System.IO.Path;
 using Xamarin.Forms.PlatformConfiguration;
 using System.IO.IsolatedStorage;
-using PCLStorage;
 using System.Runtime.CompilerServices;
 
 namespace COVID_Mobile.Views
@@ -41,11 +40,10 @@ namespace COVID_Mobile.Views
             InitializeComponent();
             LoadAllData();
             
-            IFolder folder = FileSystem.Current.LocalStorage;
             
 
-            this.GraphInfectData.Points = PointLoadUp(true, true);
-            this.GraphMorbidData.Points = PointLoadUp(false, true);
+            //this.GraphInfectData.Points = PointLoadUp(true, true);
+            //this.GraphMorbidData.Points = PointLoadUp(false, true);
 
         }
 
@@ -104,8 +102,8 @@ namespace COVID_Mobile.Views
                 for(int i = (covidList.Count - 100); i < covidList.Count; i++)
                 {
                     Point point;
-                    if (toggleRate) { point = new Point(i, covidList[i].Infection.TotalCount()); }
-                    else {  point = new Point(i, covidList[i].Morbidity.TotalCount()); }
+                    if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
+                    else {  point = new Point(i, 100 - covidList[i].Morbidity.TotalCount()); }
                     result.Add(point);
                 } 
             }
@@ -114,8 +112,8 @@ namespace COVID_Mobile.Views
                 for (int i = (covidList.Count); i < covidList.Count; i++)
                 {
                     Point point;
-                    if (toggleRate) { point = new Point(i, covidList[i].Infection.TotalCount()); }
-                    else { point = new Point(i, covidList[i].Morbidity.TotalCount()); }
+                    if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
+                    else { point = new Point(i, 100 - covidList[i].Morbidity.TotalCount()); }
                     result.Add(point);
                 }
             }
@@ -124,6 +122,7 @@ namespace COVID_Mobile.Views
         }
         private void LoadAllData()
         {
+           
 
             if (File.Exists(covidFile)) // Test-Loads COVIDs Json
             {

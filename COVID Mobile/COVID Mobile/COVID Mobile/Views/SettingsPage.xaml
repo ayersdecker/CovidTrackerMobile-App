@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="COVID_Mobile.Views.SettingsPage"
-             Title="COVID-19 Mobile Tracker">
+             Title="Settings">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -28,7 +28,8 @@
                     FontAttributes="Bold"
                     Grid.Row="1"
                     Grid.Column="1"
-                    CornerRadius="20"/>
+                    CornerRadius="20"
+                    Clicked="Preferences_Button_Clicked"/>
             <Button x:Name="SystemInfo_Button"
                     Text="System Info"
                     TextColor="White"
@@ -36,7 +37,8 @@
                     FontAttributes="Bold"
                     Grid.Row="3"
                     Grid.Column="1"
-                    CornerRadius="20"/>
+                    CornerRadius="20"
+                    Clicked="SystemInfo_Button_Clicked"/>
             <Button x:Name="InsertData_Button"
                     Text="Insert Data"
                     TextColor="White"
@@ -44,7 +46,8 @@
                     FontAttributes="Bold"
                     Grid.Row="5"
                     Grid.Column="1"
-                    CornerRadius="20"/>
+                    CornerRadius="20"
+                    Clicked="InsertData_Button_Clicked"/>
             <Button x:Name="ExportData_Button"
                     Text="Export Data"
                     TextColor="White"
@@ -52,7 +55,8 @@
                     FontAttributes="Bold"
                     Grid.Row="7"
                     Grid.Column="1"
-                    CornerRadius="20"/>
+                    CornerRadius="20"
+                    Clicked="ExportData_Button_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

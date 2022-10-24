@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="COVID_Mobile.Views.ExportData"
+             Title="Export Data">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="175"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="175"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="375"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button
+                Text="Download CSV File"
+                TextColor="White"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="1"
+                Grid.Column="1"
+                CornerRadius="20"
+                Clicked="CSV_Export_Clicked"/>
+            <Button
+                Text="Download Report"
+                TextColor="White"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Grid.Column="1"
+                CornerRadius="20"
+                Clicked="Report_Export_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
