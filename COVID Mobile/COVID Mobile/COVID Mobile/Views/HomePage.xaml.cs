@@ -20,10 +20,10 @@ namespace COVID_Mobile.Views
         {
             InitializeComponent();
             Shell.SetTabBarIsVisible(this, false);
-
+            
            
-            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "thisistheDAMNfile.txt");
-            File.WriteAllText(fileName, "SHIT.");
+            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "thisistheDAMNfile.json");
+            File.WriteAllText(fileName, "ST.");
             
         }
 

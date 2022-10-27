@@ -6,6 +6,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="COVID.json" />
+    <None Remove="locations.json" />
+    <None Remove="variants.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="COVID.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="locations.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="variants.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="NSwag.Core" Version="13.17.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />  
