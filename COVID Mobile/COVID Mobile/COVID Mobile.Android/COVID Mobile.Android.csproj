@@ -64,15 +64,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\COVID.json" />
-    <AndroidAsset Include="Assets\locations.json">
+    <EmbeddedResource Include="Assets\locations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidAsset>
-    <AndroidAsset Include="Assets\COVID.json">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\COVID.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidAsset>
-    <AndroidAsset Include="Assets\variants.json">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\variants.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidAsset>
+    </EmbeddedResource>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

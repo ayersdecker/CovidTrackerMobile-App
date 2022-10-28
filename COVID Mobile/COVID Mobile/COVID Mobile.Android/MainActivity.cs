@@ -5,7 +5,7 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using COVID_Mobile.Views;
-using Xamarin.Forms;
+using Xamarin;
 using Android.Content.Res;
 using System.IO;
 using Java.Nio.FileNio;
@@ -31,9 +31,6 @@ namespace COVID_Mobile.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-        public void PageUnlock()
-        {
-          
-        }
+       
     }
 }

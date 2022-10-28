@@ -45,3 +45,6 @@ C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mob
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID.json
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\locations.json
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\variants.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\locations.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\variants.json

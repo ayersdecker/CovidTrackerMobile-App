@@ -1286,3 +1286,9 @@ C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mob
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\lp\86\jl\files.cache
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\lp\94\jl\files.cache
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile.Android\obj\Debug\120\lp\103\jl\files.cache
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\locations.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\variants.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\Assets\locations.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\Assets\COVID.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\Assets\variants.json
