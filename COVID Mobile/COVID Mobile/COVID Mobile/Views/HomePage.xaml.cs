@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace COVID_Mobile.Views
 {
@@ -19,6 +20,11 @@ namespace COVID_Mobile.Views
         {
             InitializeComponent();
             Shell.SetTabBarIsVisible(this, false);
+            
+           
+            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "thisistheDAMNfile.json");
+            File.WriteAllText(fileName, "ST.");
+            
         }
 
         private void LoginSubmit_Clicked(object sender, EventArgs e)

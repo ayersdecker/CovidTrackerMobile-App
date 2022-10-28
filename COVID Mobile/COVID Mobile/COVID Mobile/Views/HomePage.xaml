@@ -11,7 +11,7 @@
 
             <ContentView Padding="10" BackgroundColor="White">
             <Label 
-                Text="Welcome Back!"
+                Text="Welcome"
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="Center"
                 TextColor="Gray"
