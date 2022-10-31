@@ -17,7 +17,7 @@ namespace COVID_Mobile.Views
             InitializeComponent();
         }
 
-        private void Preferences_Button_Clicked(object sender, EventArgs e)
+        private void GitHub_Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Preferences());
         }
