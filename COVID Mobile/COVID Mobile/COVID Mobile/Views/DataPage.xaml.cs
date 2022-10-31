@@ -10,6 +10,8 @@ using Xamarin.Forms.Xaml;
 using Path = System.IO.Path;
 using System.Runtime.InteropServices.ComTypes;
 using Xamarin.Forms.PlatformConfiguration;
+using System.ComponentModel;
+using static Xamarin.Forms.Internals.GIFBitmap;
 
 namespace COVID_Mobile.Views
 {
@@ -37,9 +39,28 @@ namespace COVID_Mobile.Views
             //GraphMorbidData.Points = PointLoadUp(false, true);
             GraphInfectData.Points = DummyInfectLoad();
             GraphMorbidData.Points = DummyMorbidLoad();
-            LoadData();
+            SetTotals();
+            //LoadData();
 
 
+        }
+        private void SetTotals()
+        {
+            double infectTotal = 0;
+            double morbidTotal = 0;
+            foreach(Point point in DummyInfectLoad())
+            {
+                point.Deconstruct(out double x, out double y);
+                infectTotal += y;
+            }
+            foreach (Point point in DummyMorbidLoad())
+            {
+                point.Deconstruct(out double x, out double y);
+                morbidTotal += y;
+            }
+
+            InfectNum_Label.Text = $"Recent Infections: {infectTotal}";
+            MorbidNum_Label.Text = $"Recent Deaths: {morbidTotal}";
         }
 
         private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -57,7 +78,7 @@ namespace COVID_Mobile.Views
                 GraphMorbidData.IsVisible = true;
                 InfectNum_Label.IsVisible = false;
                 MorbidNum_Label.IsVisible = true;
-                MorbidNum_Label.Margin = new Thickness(15, 510, 0, 0);
+                MorbidNum_Label.Margin = new Thickness(15, 580, 0, 0);
             }
             else
             {
@@ -65,7 +86,7 @@ namespace COVID_Mobile.Views
                 GraphMorbidData.IsVisible = true;
                 InfectNum_Label.IsVisible = true;
                 MorbidNum_Label.IsVisible = true;
-                MorbidNum_Label.Margin = new Thickness(15, 550, 0, 0);
+                MorbidNum_Label.Margin = new Thickness(15, 620, 0, 0);
             }
         }
         private void GraphTimeToggle_Toggled(object sender, ToggledEventArgs e)

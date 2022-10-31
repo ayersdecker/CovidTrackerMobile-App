@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="15"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="Preferences_Button"
-                    Text="Preferences"
+                    Text="GitHub Link"
                     TextColor="White"
                     FontSize="30"
                     FontAttributes="Bold"
