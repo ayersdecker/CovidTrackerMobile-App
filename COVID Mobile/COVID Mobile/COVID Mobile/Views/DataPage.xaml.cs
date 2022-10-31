@@ -9,6 +9,9 @@ using Xamarin.Forms.Shapes;
 using Xamarin.Forms.Xaml;
 using Path = System.IO.Path;
 using System.Runtime.InteropServices.ComTypes;
+using Xamarin.Forms.PlatformConfiguration;
+using System.ComponentModel;
+using static Xamarin.Forms.Internals.GIFBitmap;
 
 namespace COVID_Mobile.Views
 {
@@ -31,38 +34,33 @@ namespace COVID_Mobile.Views
         public DataPage()
         {
             InitializeComponent();
-            LoadAllData();
+            //LoadAllData();   
+            //GraphInfectData.Points = PointLoadUp(true, true);
+            //GraphMorbidData.Points = PointLoadUp(false, true);
+            GraphInfectData.Points = DummyInfectLoad();
+            GraphMorbidData.Points = DummyMorbidLoad();
+            SetTotals();
+            //LoadData();
 
-            using (var stream = FileSystem.OpenAppPackageFileAsync("COVID.json"))
+
+        }
+        private void SetTotals()
+        {
+            double infectTotal = 0;
+            double morbidTotal = 0;
+            foreach(Point point in DummyInfectLoad())
             {
-                StreamReader reader = new StreamReader(stream);
-                List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
-                reader.Close();
-
+                point.Deconstruct(out double x, out double y);
+                infectTotal += y;
+            }
+            foreach (Point point in DummyMorbidLoad())
+            {
+                point.Deconstruct(out double x, out double y);
+                morbidTotal += y;
             }
 
-            List<COVID> covidTest = new List<COVID>();
-
-            GraphInfectData.Points = PointLoadUp(true, true);
-            GraphMorbidData.Points = PointLoadUp(false, true);
-
-            //PointCollection infectPoints = new PointCollection();
-            //infectPoints.Add(new Point(0, 30));
-            //infectPoints.Add(new Point(25, 80));
-            //infectPoints.Add(new Point(50, 30));
-            //infectPoints.Add(new Point(75, 40));
-            //infectPoints.Add(new Point(100, 60));
-            //PointCollection morbidPoints = new PointCollection();
-            //morbidPoints.Add(new Point(0, 50));
-            //morbidPoints.Add(new Point(25, 20));
-            //morbidPoints.Add(new Point(50, 70));
-            //morbidPoints.Add(new Point(75, 10));
-            //morbidPoints.Add(new Point(100, 60));
-
-            //GraphInfectData.Points = infectPoints;
-            //GraphMorbidData.Points = morbidPoints;
-
-
+            InfectNum_Label.Text = $"Recent Infections: {infectTotal}";
+            MorbidNum_Label.Text = $"Recent Deaths: {morbidTotal}";
         }
 
         private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -80,7 +78,7 @@ namespace COVID_Mobile.Views
                 GraphMorbidData.IsVisible = true;
                 InfectNum_Label.IsVisible = false;
                 MorbidNum_Label.IsVisible = true;
-                MorbidNum_Label.Margin = new Thickness(15, 510, 0, 0);
+                MorbidNum_Label.Margin = new Thickness(15, 580, 0, 0);
             }
             else
             {
@@ -88,10 +86,9 @@ namespace COVID_Mobile.Views
                 GraphMorbidData.IsVisible = true;
                 InfectNum_Label.IsVisible = true;
                 MorbidNum_Label.IsVisible = true;
-                MorbidNum_Label.Margin = new Thickness(15, 550, 0, 0);
+                MorbidNum_Label.Margin = new Thickness(15, 620, 0, 0);
             }
         }
-
         private void GraphTimeToggle_Toggled(object sender, ToggledEventArgs e)
         {
             if (GraphTimeToggle.IsToggled)
@@ -112,7 +109,6 @@ namespace COVID_Mobile.Views
 
             }
         }
-
         private PointCollection PointLoadUp(bool toggleRate, bool toggleTime)
         {
             PointCollection result = new PointCollection();
@@ -141,7 +137,13 @@ namespace COVID_Mobile.Views
         }
         private void LoadAllData()
         {
-
+            
+            //using (var stream = FileSystem.OpenAppPackageFileAsync("COVID.json"))
+            //{
+            //    StreamReader reader = new StreamReader(stream);
+            //    List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
+            //    reader.Close();
+            //}
 
             if (File.Exists("../COVID.json")) // Test-Loads COVIDs Json
             {
@@ -155,8 +157,6 @@ namespace COVID_Mobile.Views
                 // Transfers content from List into the ObservableCollection
                 covidList = new ObservableCollection<COVID>(aCovidList);
             }
-            else { }
-
             if (File.Exists("../variants.json")) // Test-Loads Variants Json 
             {
                 StreamReader reader = new StreamReader("../variants.json");
@@ -168,8 +168,6 @@ namespace COVID_Mobile.Views
                 // Transfers content from List into the ObservableCollection
                 variantList = new ObservableCollection<string>(aVariants);
             }
-            else { }
-
             if (File.Exists("../locations.json")) // Test-Loads Locations Json
             {
                 StreamReader reader = new StreamReader("../locations.json");
@@ -181,9 +179,99 @@ namespace COVID_Mobile.Views
                 // Transfers content from List into the ObservableCollection
                 locationList = new ObservableCollection<Place>(aLocationList);
             }
-            else { }
         }
+        private PointCollection DummyMorbidLoad()
+        {
+            PointCollection morbidPoints = new PointCollection();
+            morbidPoints.Add(new Point(0, 27));
+            morbidPoints.Add(new Point(5, 20));
+            morbidPoints.Add(new Point(10, 40));
+            morbidPoints.Add(new Point(15, 70));
+            morbidPoints.Add(new Point(20, 34));
+            morbidPoints.Add(new Point(25, 19));
+            morbidPoints.Add(new Point(30, 60));
+            morbidPoints.Add(new Point(35, 60));
+            morbidPoints.Add(new Point(40, 40));
+            morbidPoints.Add(new Point(45, 73));
+            morbidPoints.Add(new Point(50, 50));
+            morbidPoints.Add(new Point(55, 60));
+            morbidPoints.Add(new Point(60, 90));
+            morbidPoints.Add(new Point(65, 83));
+            morbidPoints.Add(new Point(70, 90));
+            morbidPoints.Add(new Point(75, 95));
+            morbidPoints.Add(new Point(80, 60));
+            morbidPoints.Add(new Point(85, 87));
+            morbidPoints.Add(new Point(90, 82));
+            morbidPoints.Add(new Point(95, 70));
+            morbidPoints.Add(new Point(100, 90));
+            return morbidPoints;
+        }
+        private PointCollection DummyInfectLoad()
+        {
+            PointCollection infectPoints = new PointCollection();
+            infectPoints.Add(new Point(0, 90));
+            infectPoints.Add(new Point(5, 80));
+            infectPoints.Add(new Point(10, 30));
+            infectPoints.Add(new Point(15, 40));
+            infectPoints.Add(new Point(20, 70));
+            infectPoints.Add(new Point(25, 50));
+            infectPoints.Add(new Point(30, 80));
+            infectPoints.Add(new Point(35, 70));
+            infectPoints.Add(new Point(40, 49));
+            infectPoints.Add(new Point(45, 60));
+            infectPoints.Add(new Point(50, 35));
+            infectPoints.Add(new Point(55, 80));
+            infectPoints.Add(new Point(60, 30));
+            infectPoints.Add(new Point(65, 40));
+            infectPoints.Add(new Point(70, 60));
+            infectPoints.Add(new Point(75, 30));
+            infectPoints.Add(new Point(80, 29));
+            infectPoints.Add(new Point(85, 30));
+            infectPoints.Add(new Point(90, 19));
+            infectPoints.Add(new Point(95, 50));
+            infectPoints.Add(new Point(100, 60));
+            return infectPoints;
+        }
+        private async void LoadData()
+        {
+            
+            using (var stream = await FileSystem.OpenAppPackageFileAsync(locationFile))
+            {
+                StreamReader reader = new StreamReader(stream);
+                string listRead = await reader.ReadToEndAsync();
+                // Loads data into a temporary Collection List
+                List<Place> aLocationList = JsonConvert.DeserializeObject<List<Place>>(listRead);
+                // Close Reader before transfer
+                reader.Close();
+                // Transfers content from List into the ObservableCollection
+                locationList = new ObservableCollection<Place>(aLocationList);
+            }
+            using (var stream = await FileSystem.OpenAppPackageFileAsync(variantFile))
+            {
+                StreamReader reader = new StreamReader(stream);
+                string listRead = await reader.ReadToEndAsync();
+                // Loads data into a temporary Collection List
+                List<string> aVariantList = JsonConvert.DeserializeObject<List<string>>(listRead);
+                // Close Reader before transfer
+                reader.Close();
+                // Transfers content from List into the ObservableCollection
+                variantList = new ObservableCollection<string>(aVariantList);
+            }
+            using (var stream = await FileSystem.OpenAppPackageFileAsync(covidFile))
+            {
+                StreamReader reader = new StreamReader(stream);
+                string listRead = await reader.ReadToEndAsync();
+                // Loads data into a temporary Collection List
+                List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
+                // Close Reader before transfer
+                reader.Close();
+                // Transfers content from List into the ObservableCollection
+                covidList = new ObservableCollection<COVID>(aCovidList);
+            }
 
+
+        }
+        
 
     }
 }

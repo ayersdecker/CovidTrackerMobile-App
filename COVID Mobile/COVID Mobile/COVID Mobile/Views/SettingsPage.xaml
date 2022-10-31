@@ -21,15 +21,15 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="15"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="Preferences_Button"
-                    Text="Preferences"
+            <Button x:Name="GitHub_Button"
+                    Text="GitHub Link"
                     TextColor="White"
                     FontSize="30"
                     FontAttributes="Bold"
                     Grid.Row="1"
                     Grid.Column="1"
                     CornerRadius="20"
-                    Clicked="Preferences_Button_Clicked"/>
+                    Clicked="GitHub_Button_Clicked"/>
             <Button x:Name="SystemInfo_Button"
                     Text="System Info"
                     TextColor="White"

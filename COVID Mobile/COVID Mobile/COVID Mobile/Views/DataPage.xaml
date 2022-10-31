@@ -71,13 +71,28 @@
                     Visual="Material"
                     Toggled="GraphTimeToggle_Toggled"/>
             <BoxView 
-                Margin="7.5,370,0,0"
+                Margin="7.5,430,0,0"
                 WidthRequest="380"
                 HeightRequest="130"
                 Color="DodgerBlue"
                 CornerRadius="20"/>
+            <Label Text="       |    |    |    |     |    |    |    |     |    |    |     |    |    |    |    |    |    |    |   |"
+                   TextColor="DarkSlateBlue"
+                   Margin="0,355,0,0"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="     20 19 18 17 16 15 14 13 12 11 10   9   8   7   6   5   4   3   2   1"
+                   TextColor="DarkSlateBlue"
+                   FontSize="13"
+                   Margin="0,370,0,0"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="(Days Ago)"
+                   TextColor="DarkSlateBlue"
+                   Margin="155,390,0,0"
+                   FontAttributes="Bold"/>
             <StackLayout 
-                Margin="15,380,0,0"
+                Margin="15,440,0,0"
                 HorizontalOptions="Center">
 
                 <RadioButton Content="Infection Rate"
@@ -96,13 +111,28 @@
                    Text="Recent Infections: "
                    TextColor="Black"
                    FontSize="Large"
-                   Margin="15,510,0,0"/>
+                   Margin="15,580,0,0"/>
             <Label x:Name="MorbidNum_Label"
                    Text="Recent Deaths: "
                    TextColor="Black"
                    IsVisible="false"
                    FontSize="Large"
-                   Margin="15,510,0,0"/>
+                   Margin="15,620,0,0"/>
+            <Label 
+                   Text="- - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - "
+                   TextColor="Black"
+                   FontSize="Large"
+                   Margin="15,80,0,0"/>
+            <Label 
+                   Text="- - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - "
+                   TextColor="Black"
+                   FontSize="Large"
+                   Margin="15,170,0,0"/>
+            <Label 
+                   Text="- - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - "
+                   TextColor="Black"
+                   FontSize="Large"
+                   Margin="15,260,0,0"/>
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -34,7 +34,6 @@ C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mob
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\refint\COVID Mobile.dll
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\COVID Mobile.pdb
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\ref\COVID Mobile.dll
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\Preferences.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\SystemInfo.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\ExportData.xaml.g.cs
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\InsertData.xaml.g.cs
@@ -45,3 +44,7 @@ C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mob
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID.json
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\locations.json
 C:\Users\draye\source\repos\project-covid-tracker--mobile\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\variants.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\COVID.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\locations.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\bin\Debug\netstandard2.0\variants.json
+C:\a\COVID Mobile\COVID Mobile\COVID Mobile\obj\Debug\netstandard2.0\Views\GitHub.xaml.g.cs
