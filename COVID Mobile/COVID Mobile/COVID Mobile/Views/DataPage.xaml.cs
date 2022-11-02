@@ -113,24 +113,26 @@ namespace COVID_Mobile.Views
         }
         private PointCollection PointLoadUp(bool toggleRate, bool toggleTime)
         {
+            int[] xPair = new int[6] { 0, 20 , 40, 60 , 80, 100};
+            int[] xPairGreater = new int[21] { 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100 };
             PointCollection result = new PointCollection();
             if (toggleTime)
             {
-                    for (int i = (covidList.Count - 100); i < covidList.Count; i++)
-                    {
-                        Point point;
-                        if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
-                        else { point = new Point(i, 100 - covidList[i].Morbidity.TotalCount()); }
-                        result.Add(point);
-                    }
-            }
-            else
-            {
-                for (int i = 0; i < covidList.Count; i++)
+                for (int i = 0; i < xPairGreater.Length; i++)
                 {
                     Point point;
-                    if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
-                    else { point = new Point(i, 100 - covidList[i].Morbidity.TotalCount()); }
+                    if (toggleRate) { point = new Point(xPairGreater[(xPairGreater.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Infection.TotalCount()); }
+                    else { point = new Point(xPairGreater[(xPairGreater.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Morbidity.TotalCount()); }
+                    result.Add(point);
+                }
+            } 
+            else
+            {
+                for (int i = 0; i < xPair.Length; i++)
+                {
+                    Point point;
+                    if (toggleRate) { point = new Point(xPair[(xPair.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Infection.TotalCount()); }
+                    else { point = new Point(xPair[(xPair.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Morbidity.TotalCount()); }
                     result.Add(point);
                 }
             }
