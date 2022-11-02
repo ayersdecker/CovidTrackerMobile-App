@@ -1,0 +1,167 @@
+[
+  {
+    "covidList": [
+    ],
+    "Date": "2022-02-22T00:00:00-05:00",
+    "VariantProp": "Omicron",
+    "LocationProp": {
+      "City": "Owego",
+      "State": "NY"
+    },
+    "Infection": {
+      "UnderTwenty": 1,
+      "TwentyToNine": 1,
+      "ThirtyToNine": 1,
+      "FortyToNine": 1,
+      "FiftyToNine": 1,
+      "SixtyToNine": 1,
+      "SeventyToNine": 1,
+      "OverSeventyNine": 1,
+      "Unknown": 0
+    },
+    "Morbidity": {
+      "UnderTwenty": 1,
+      "TwentyToNine": 1,
+      "ThirtyToNine": 1,
+      "FortyToNine": 1,
+      "FiftyToNine": 1,
+      "SixtyToNine": 1,
+      "SeventyToNine": 1,
+      "OverSeventyNine": 1,
+      "Unknown": 0
+    },
+    "Note": "[No Recorded Note]"
+  },
+  {
+    "covidList": [
+    ],
+    "Date": "2022-03-04T00:00:00-05:00",
+    "VariantProp": "Omicron",
+    "LocationProp": {
+      "City": "Owego",
+      "State": "NY"
+    },
+    "Infection": {
+      "UnderTwenty": 2,
+      "TwentyToNine": 3,
+      "ThirtyToNine": 2,
+      "FortyToNine": 3,
+      "FiftyToNine": 2,
+      "SixtyToNine": 3,
+      "SeventyToNine": 2,
+      "OverSeventyNine": 3,
+      "Unknown": 0
+    },
+    "Morbidity": {
+      "UnderTwenty": 2,
+      "TwentyToNine": 32,
+      "ThirtyToNine": 3,
+      "FortyToNine": 2,
+      "FiftyToNine": 23,
+      "SixtyToNine": 2,
+      "SeventyToNine": 2,
+      "OverSeventyNine": 2,
+      "Unknown": 0
+    },
+    "Note": "[No Recorded Note]"
+  },
+  {
+    "covidList": [
+    ],
+    "Date": "2022-03-12T19:55:29.9138745-05:00",
+    "VariantProp": "Omicron",
+    "LocationProp": {
+      "City": "Owego",
+      "State": "NY"
+    },
+    "Infection": {
+      "UnderTwenty": 4,
+      "TwentyToNine": 4,
+      "ThirtyToNine": 44,
+      "FortyToNine": 4,
+      "FiftyToNine": 4,
+      "SixtyToNine": 4,
+      "SeventyToNine": 4,
+      "OverSeventyNine": 4,
+      "Unknown": 4
+    },
+    "Morbidity": {
+      "UnderTwenty": 4,
+      "TwentyToNine": 4,
+      "ThirtyToNine": 4,
+      "FortyToNine": 4,
+      "FiftyToNine": 4,
+      "SixtyToNine": 4,
+      "SeventyToNine": 4,
+      "OverSeventyNine": 4,
+      "Unknown": 4
+    },
+    "Note": "[No Recorded Note]"
+  },
+  {
+    "covidList": [
+    ],
+    "Date": "2021-03-20T14:12:53.913354-04:00",
+    "VariantProp": "Original",
+    "LocationProp": {
+      "City": "Owego",
+      "State": "NY"
+    },
+    "Infection": {
+      "UnderTwenty": 2,
+      "TwentyToNine": 2,
+      "ThirtyToNine": 2,
+      "FortyToNine": 2,
+      "FiftyToNine": 2,
+      "SixtyToNine": 2,
+      "SeventyToNine": 2,
+      "OverSeventyNine": 2,
+      "Unknown": 2
+    },
+    "Morbidity": {
+      "UnderTwenty": 2,
+      "TwentyToNine": 2,
+      "ThirtyToNine": 2,
+      "FortyToNine": 2,
+      "FiftyToNine": 2,
+      "SixtyToNine": 22,
+      "SeventyToNine": 2,
+      "OverSeventyNine": 22,
+      "Unknown": 2
+    },
+    "Note": "[No Recorded Note]"
+  },
+  {
+    "covidList": [
+    ],
+    "Date": "2022-04-20T23:39:40.9254533-04:00",
+    "VariantProp": "Charlie",
+    "LocationProp": {
+      "City": "Owego",
+      "State": "NY"
+    },
+    "Infection": {
+      "UnderTwenty": 3,
+      "TwentyToNine": 3,
+      "ThirtyToNine": 3,
+      "FortyToNine": 3,
+      "FiftyToNine": 3,
+      "SixtyToNine": 3,
+      "SeventyToNine": 3,
+      "OverSeventyNine": 3,
+      "Unknown": 3
+    },
+    "Morbidity": {
+      "UnderTwenty": 3,
+      "TwentyToNine": 3,
+      "ThirtyToNine": 3,
+      "FortyToNine": 3,
+      "FiftyToNine": 3,
+      "SixtyToNine": 3,
+      "SeventyToNine": 3,
+      "OverSeventyNine": 3,
+      "Unknown": 3
+    },
+    "Note": "[No Recorded Note]"
+  }
+]

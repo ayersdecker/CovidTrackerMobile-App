@@ -64,15 +64,13 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\COVID.json" />
-    <EmbeddedResource Include="Assets\locations.json">
+    <AndroidAsset Include="Assets\COVID.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Assets\COVID.json">
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\variants.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Assets\variants.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\locations.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -109,4 +107,9 @@
     <AndroidResource Include="Resources\drawable\COVID_Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties assets_4locations_1json__JsonSchema="https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-5.json" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
