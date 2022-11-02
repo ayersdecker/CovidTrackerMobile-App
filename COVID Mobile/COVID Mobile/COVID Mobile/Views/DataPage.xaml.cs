@@ -27,21 +27,23 @@ namespace COVID_Mobile.Views
         // Storage for Locations
         ObservableCollection<Place> locationList = new ObservableCollection<Place>();
 
-        string covidFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "COVID.json");         // COVID JSON File - Used for database purposes
-        string variantFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "variants.json");    // Variant JSON File - Used for database purposes
-        string locationFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "locations.json");  // Location JSON File - Used for database purposes
+        //string covidFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "COVID.json");         // COVID JSON File - Used for database purposes
+        //string variantFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "variants.json");    // Variant JSON File - Used for database purposes
+       // string locationFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "locations.json");  // Location JSON File - Used for database purposes
 
         public DataPage()
         {
+              
             InitializeComponent();
-            //LoadAllData();   
-            //GraphInfectData.Points = PointLoadUp(true, true);
-            //GraphMorbidData.Points = PointLoadUp(false, true);
-            GraphInfectData.Points = DummyInfectLoad();
-            GraphMorbidData.Points = DummyMorbidLoad();
+            LoadData(); 
+            //GraphInfectData.Points = PointLoadUp(true, false);
+            //GraphMorbidData.Points = PointLoadUp(false, false);
+            
+            
+            //GraphInfectData.Points = DummyInfectLoad();
+            //GraphMorbidData.Points = DummyMorbidLoad();
             SetTotals();
-            //LoadData();
-
+           
 
         }
         private void SetTotals()
@@ -114,17 +116,17 @@ namespace COVID_Mobile.Views
             PointCollection result = new PointCollection();
             if (toggleTime)
             {
-                for (int i = (covidList.Count - 100); i < covidList.Count; i++)
-                {
-                    Point point;
-                    if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
-                    else { point = new Point(i, 100 - covidList[i].Morbidity.TotalCount()); }
-                    result.Add(point);
-                }
+                    for (int i = (covidList.Count - 100); i < covidList.Count; i++)
+                    {
+                        Point point;
+                        if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
+                        else { point = new Point(i, 100 - covidList[i].Morbidity.TotalCount()); }
+                        result.Add(point);
+                    }
             }
             else
             {
-                for (int i = (covidList.Count); i < covidList.Count; i++)
+                for (int i = 0; i < covidList.Count; i++)
                 {
                     Point point;
                     if (toggleRate) { point = new Point(i, 100 - covidList[i].Infection.TotalCount()); }
@@ -135,51 +137,7 @@ namespace COVID_Mobile.Views
 
             return result;
         }
-        private void LoadAllData()
-        {
-            
-            //using (var stream = FileSystem.OpenAppPackageFileAsync("COVID.json"))
-            //{
-            //    StreamReader reader = new StreamReader(stream);
-            //    List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
-            //    reader.Close();
-            //}
-
-            if (File.Exists("../COVID.json")) // Test-Loads COVIDs Json
-            {
-
-                StreamReader reader = new StreamReader("../COVID.json");
-                string listRead = reader.ReadToEnd();
-                // Loads data into a temporary Collection List
-                List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
-                // Close Reader before transfer
-                reader.Close();
-                // Transfers content from List into the ObservableCollection
-                covidList = new ObservableCollection<COVID>(aCovidList);
-            }
-            if (File.Exists("../variants.json")) // Test-Loads Variants Json 
-            {
-                StreamReader reader = new StreamReader("../variants.json");
-                string listRead = reader.ReadToEnd();
-                // Loads data into a temporary Collection List
-                List<string> aVariants = JsonConvert.DeserializeObject<List<string>>(listRead);
-                // Close Reader before transfer
-                reader.Close();
-                // Transfers content from List into the ObservableCollection
-                variantList = new ObservableCollection<string>(aVariants);
-            }
-            if (File.Exists("../locations.json")) // Test-Loads Locations Json
-            {
-                StreamReader reader = new StreamReader("../locations.json");
-                string listRead = reader.ReadToEnd();
-                // Loads data into a temporary Collection List
-                List<Place> aLocationList = JsonConvert.DeserializeObject<List<Place>>(listRead);
-                // Close Reader before transfer
-                reader.Close();
-                // Transfers content from List into the ObservableCollection
-                locationList = new ObservableCollection<Place>(aLocationList);
-            }
-        }
+        
         private PointCollection DummyMorbidLoad()
         {
             PointCollection morbidPoints = new PointCollection();
@@ -235,7 +193,7 @@ namespace COVID_Mobile.Views
         private async void LoadData()
         {
             
-            using (var stream = await FileSystem.OpenAppPackageFileAsync(locationFile))
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("locations.json"))
             {
                 StreamReader reader = new StreamReader(stream);
                 string listRead = await reader.ReadToEndAsync();
@@ -246,7 +204,7 @@ namespace COVID_Mobile.Views
                 // Transfers content from List into the ObservableCollection
                 locationList = new ObservableCollection<Place>(aLocationList);
             }
-            using (var stream = await FileSystem.OpenAppPackageFileAsync(variantFile))
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("variants.json"))
             {
                 StreamReader reader = new StreamReader(stream);
                 string listRead = await reader.ReadToEndAsync();
@@ -257,7 +215,7 @@ namespace COVID_Mobile.Views
                 // Transfers content from List into the ObservableCollection
                 variantList = new ObservableCollection<string>(aVariantList);
             }
-            using (var stream = await FileSystem.OpenAppPackageFileAsync(covidFile))
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("COVID.json"))
             {
                 StreamReader reader = new StreamReader(stream);
                 string listRead = await reader.ReadToEndAsync();
@@ -269,6 +227,8 @@ namespace COVID_Mobile.Views
                 covidList = new ObservableCollection<COVID>(aCovidList);
             }
 
+            GraphInfectData.Points = PointLoadUp(true, false);
+            GraphMorbidData.Points = PointLoadUp(false, false);
 
         }
         
