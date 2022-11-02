@@ -1,9 +1,6 @@
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID.json
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\locations.json
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\variants.json
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\Assets\locations.json
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\Assets\COVID.json
-C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\Assets\variants.json
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.Android.dll
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\COVID Mobile.Android.pdb
 C:\a\COVID Mobile\COVID Mobile\COVID Mobile.Android\bin\Debug\com.companyname.covid_mobile.apk

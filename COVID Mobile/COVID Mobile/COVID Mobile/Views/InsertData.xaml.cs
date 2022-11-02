@@ -1,37 +1,38 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static System.Net.WebRequestMethods;
+using File = System.IO.File;
 
 namespace COVID_Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class InsertData : ContentPage
     {
-        List<COVID> addedCOVID = new List<COVID>();
+        // Storage for COVID Cases
+        ObservableCollection<COVID> covidList = new ObservableCollection<COVID>();
+        // Storage for Variants
+        ObservableCollection<string> variantList = new ObservableCollection<string>();
+        // Storage for Locations
+        ObservableCollection<Place> locationList = new ObservableCollection<Place>();
         public InsertData()
         {
+
             InitializeComponent();
-
-            List<string> variantNames = new List<string>();
-            variantNames.Add("Omicron");
-            variantNames.Add("Delta");
-            variantNames.Add("Classic");
-
-            List<Place> placeNames = new List<Place>();
-            placeNames.Add(new Place("Owego", "NY"));
-            placeNames.Add(new Place("Rochester", "NY"));
-            placeNames.Add(new Place("Scranton", "PA"));
-            
+            LoadData();
             DatePick.Date = DateNow();
-            VariantPickerLoad(variantNames);
-            LocationPickerLoad(placeNames);
-
             
+
         }
         private DateTime DateNow()
         {
@@ -39,7 +40,7 @@ namespace COVID_Mobile.Views
         }
         private void VariantPickerLoad(List<string> strings)
         {
-            foreach(var item in strings){ VariantPicker.Items.Add(item);}
+            foreach (var item in strings) { VariantPicker.Items.Add(item); }
         }
         private void LocationPickerLoad(List<Place> places)
         {
@@ -70,7 +71,7 @@ namespace COVID_Mobile.Views
             MorbidOv.Text = "";
             MorbidUnknown.Text = "";
             Notes.Text = "";
-            
+
         }
 
         private void Submit_Clicked(object sender, EventArgs e)
@@ -81,9 +82,9 @@ namespace COVID_Mobile.Views
                 aCovid.Date = DatePick.Date;
                 aCovid.LocationProp = LocationPicker.SelectedItem as Place;
                 aCovid.VariantProp = VariantPicker.SelectedItem.ToString();
-                aCovid.Infection = new AgeBracket( int.Parse(InfectUn.Text),
-                    int.Parse(Infect29.Text), int.Parse(Infect39.Text), 
-                    int.Parse(Infect49.Text), int.Parse(Infect59.Text), 
+                aCovid.Infection = new AgeBracket(int.Parse(InfectUn.Text),
+                    int.Parse(Infect29.Text), int.Parse(Infect39.Text),
+                    int.Parse(Infect49.Text), int.Parse(Infect59.Text),
                     int.Parse(Infect69.Text), int.Parse(Infect79.Text),
                     int.Parse(InfectOv.Text), int.Parse(InfectUnknown.Text));
                 aCovid.Morbidity = new AgeBracket(int.Parse(MorbidUn.Text),
@@ -93,32 +94,33 @@ namespace COVID_Mobile.Views
                     int.Parse(MorbidOv.Text), int.Parse(MorbidUnknown.Text));
                 aCovid.Note = Notes.Text;
 
-                addedCOVID.Add(aCovid);
+                covidList.Add(aCovid);
+                LoadBackIntoFile();
                 Title = "Insert Data";
             }
-            else{ Title = "INPUT ERROR, REVISE"; }
+            else { Title = "INPUT ERROR, REVISE"; }
 
         }
         private bool FormCheck()
         {
             bool flag = false;
-            if(!(LocationPicker.SelectedItem != null && VariantPicker.SelectedItem != null))
+            if (!(LocationPicker.SelectedItem != null && VariantPicker.SelectedItem != null))
             {
                 flag = true;
             }
-            if(InfectUn == null || Infect29 == null || Infect39 == null || Infect49 == null)
+            if (InfectUn == null || Infect29 == null || Infect39 == null || Infect49 == null)
             {
                 flag = true;
             }
-            if(Infect59 == null || Infect69 == null || Infect79 == null || InfectOv == null)
+            if (Infect59 == null || Infect69 == null || Infect79 == null || InfectOv == null)
             {
                 flag = true;
             }
-            if(MorbidUn == null || Infect29 == null || Infect39 == null || Infect49 == null)
+            if (MorbidUn == null || Infect29 == null || Infect39 == null || Infect49 == null)
             {
                 flag = true;
             }
-            if(Morbid59 == null || Morbid69 == null || Morbid79 == null || MorbidOv == null)
+            if (Morbid59 == null || Morbid69 == null || Morbid79 == null || MorbidOv == null)
             {
                 flag = true;
             }
@@ -126,6 +128,57 @@ namespace COVID_Mobile.Views
 
 
             return flag;
+        }
+        private async void LoadData()
+        {
+
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("locations.json"))
+            {
+                StreamReader reader = new StreamReader(stream);
+                string listRead = await reader.ReadToEndAsync();
+                // Loads data into a temporary Collection List
+                List<Place> aLocationList = JsonConvert.DeserializeObject<List<Place>>(listRead);
+                // Close Reader before transfer
+                reader.Close();
+                // Transfers content from List into the ObservableCollection
+                locationList = new ObservableCollection<Place>(aLocationList);
+            }
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("variants.json"))
+            {
+                StreamReader reader = new StreamReader(stream);
+                string listRead = await reader.ReadToEndAsync();
+                // Loads data into a temporary Collection List
+                List<string> aVariantList = JsonConvert.DeserializeObject<List<string>>(listRead);
+                // Close Reader before transfer
+                reader.Close();
+                // Transfers content from List into the ObservableCollection
+                variantList = new ObservableCollection<string>(aVariantList);
+            }
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("COVID.json"))
+            {
+                StreamReader reader = new StreamReader(stream);
+                string listRead = await reader.ReadToEndAsync();
+                // Loads data into a temporary Collection List
+                List<COVID> aCovidList = JsonConvert.DeserializeObject<List<COVID>>(listRead);
+                // Close Reader before transfer
+                reader.Close();
+                // Transfers content from List into the ObservableCollection
+                covidList = new ObservableCollection<COVID>(aCovidList);
+            }
+            
+            VariantPickerLoad(variantList.ToList());
+            LocationPickerLoad(locationList.ToList());
+        }
+
+        private async void LoadBackIntoFile()
+        {
+            StreamWriter writer = new StreamWriter(await FileSystem.OpenAppPackageFileAsync("COVID.json").ConfigureAwait(false));
+                string listSerial = JsonConvert.SerializeObject(covidList);
+                writer.Write(listSerial);
+                writer.Close();
+           
+
+                
         }
     }
 }
