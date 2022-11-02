@@ -170,12 +170,22 @@ namespace COVID_Mobile.Views
             LocationPickerLoad(locationList.ToList());
         }
 
-        private async void LoadBackIntoFile()
+        private void LoadBackIntoFile()
         {
-            StreamWriter writer = new StreamWriter(await FileSystem.OpenAppPackageFileAsync("COVID.json").ConfigureAwait(false));
+            try
+            {
+                string covidFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "COVID.json");
+                StreamWriter writer = new StreamWriter(covidFile);
                 string listSerial = JsonConvert.SerializeObject(covidList);
                 writer.Write(listSerial);
                 writer.Close();
+
+            }
+            catch( Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
            
 
                 

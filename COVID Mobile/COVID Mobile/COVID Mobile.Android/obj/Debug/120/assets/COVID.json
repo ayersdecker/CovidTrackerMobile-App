@@ -1,7 +1,7 @@
 [
   {
-    "covidList": [
-    ],
+
+    "covidList": [],
     "Date": "2022-02-22T00:00:00-05:00",
     "VariantProp": "Omicron",
     "LocationProp": {
@@ -33,8 +33,40 @@
     "Note": "[No Recorded Note]"
   },
   {
-    "covidList": [
-    ],
+
+    "covidList": [],
+    "Date": "2022-02-22T00:00:00-05:00",
+    "VariantProp": "Omicron",
+    "LocationProp": {
+      "City": "Owego",
+      "State": "NY"
+    },
+    "Infection": {
+      "UnderTwenty": 1,
+      "TwentyToNine": 1,
+      "ThirtyToNine": 1,
+      "FortyToNine": 1,
+      "FiftyToNine": 1,
+      "SixtyToNine": 1,
+      "SeventyToNine": 1,
+      "OverSeventyNine": 1,
+      "Unknown": 0
+    },
+    "Morbidity": {
+      "UnderTwenty": 1,
+      "TwentyToNine": 1,
+      "ThirtyToNine": 1,
+      "FortyToNine": 1,
+      "FiftyToNine": 1,
+      "SixtyToNine": 1,
+      "SeventyToNine": 1,
+      "OverSeventyNine": 1,
+      "Unknown": 0
+    },
+    "Note": "[No Recorded Note]"
+  },
+  {
+    "covidList": [],
     "Date": "2022-03-04T00:00:00-05:00",
     "VariantProp": "Omicron",
     "LocationProp": {
@@ -66,8 +98,7 @@
     "Note": "[No Recorded Note]"
   },
   {
-    "covidList": [
-    ],
+    "covidList": [],
     "Date": "2022-03-12T19:55:29.9138745-05:00",
     "VariantProp": "Omicron",
     "LocationProp": {
@@ -99,8 +130,7 @@
     "Note": "[No Recorded Note]"
   },
   {
-    "covidList": [
-    ],
+    "covidList": [],
     "Date": "2021-03-20T14:12:53.913354-04:00",
     "VariantProp": "Original",
     "LocationProp": {
@@ -132,8 +162,7 @@
     "Note": "[No Recorded Note]"
   },
   {
-    "covidList": [
-    ],
+    "covidList": [],
     "Date": "2022-04-20T23:39:40.9254533-04:00",
     "VariantProp": "Charlie",
     "LocationProp": {

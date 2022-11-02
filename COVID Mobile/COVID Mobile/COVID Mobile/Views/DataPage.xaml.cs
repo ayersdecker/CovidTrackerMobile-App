@@ -121,8 +121,10 @@ namespace COVID_Mobile.Views
                 for (int i = 0; i < xPairGreater.Length; i++)
                 {
                     Point point;
-                    if (toggleRate) { point = new Point(xPairGreater[(xPairGreater.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Infection.TotalCount()); }
-                    else { point = new Point(xPairGreater[(xPairGreater.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Morbidity.TotalCount()); }
+                    int xPoint = xPairGreater[(xPairGreater.Length - 1) - i];
+                    COVID entry = covidList[(covidList.Count - 1) - i];
+                    if (toggleRate) { point = new Point(xPoint, 100 - entry.Infection.TotalCount()); }
+                    else { point = new Point(xPoint, 100 - entry.Morbidity.TotalCount()); }
                     result.Add(point);
                 }
             } 
@@ -131,8 +133,10 @@ namespace COVID_Mobile.Views
                 for (int i = 0; i < xPair.Length; i++)
                 {
                     Point point;
-                    if (toggleRate) { point = new Point(xPair[(xPair.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Infection.TotalCount()); }
-                    else { point = new Point(xPair[(xPair.Length - 1) - i], 100 - covidList[(covidList.Count - 1) - i].Morbidity.TotalCount()); }
+                    int xPoint = xPair[(xPair.Length - 1) - i];
+                    COVID entry = covidList[(covidList.Count - 1) - i];
+                    if (toggleRate) { point = new Point(xPoint, 100 - entry.Infection.TotalCount()); }
+                    else { point = new Point(xPoint, 100 - entry.Morbidity.TotalCount()); }
                     result.Add(point);
                 }
             }
