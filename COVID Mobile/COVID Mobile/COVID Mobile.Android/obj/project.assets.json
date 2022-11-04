@@ -3628,18 +3628,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\draye\\.nuget\\packages\\": {},
+    "C:\\Users\\ayers\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\COVID Mobile.Android.csproj",
+      "projectUniqueName": "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\COVID Mobile.Android.csproj",
       "projectName": "COVID Mobile.Android",
-      "projectPath": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\COVID Mobile.Android.csproj",
-      "packagesPath": "C:\\Users\\draye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\obj\\",
+      "projectPath": "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\COVID Mobile.Android.csproj",
+      "packagesPath": "C:\\Users\\ayers\\.nuget\\packages\\",
+      "outputPath": "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3647,7 +3647,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\draye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayers\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -3662,8 +3662,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.csproj": {
-              "projectPath": "C:\\Users\\draye\\source\\repos\\project-covid-tracker--mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.csproj"
+            "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.csproj": {
+              "projectPath": "C:\\a\\COVID Mobile\\COVID Mobile\\COVID Mobile\\COVID Mobile.csproj"
             }
           }
         }

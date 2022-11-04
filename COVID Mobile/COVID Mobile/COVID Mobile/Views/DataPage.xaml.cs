@@ -98,8 +98,14 @@ namespace COVID_Mobile.Views
                 GraphTimeToggle_Label.Text = "All Data";
                 InfectNum_Label.Text = "Total Infection: ";
                 MorbidNum_Label.Text = "Total Deaths: ";
-                this.GraphInfectData.Points = PointLoadUp(true, true);
-                this.GraphMorbidData.Points = PointLoadUp(false, true);
+                // UNCOMMENT once more data is embedded in COVIDList
+                this.GraphInfectData.Points =DummyInfectLoad();
+                this.GraphMorbidData.Points = DummyMorbidLoad();
+                fiveNumLabel.IsVisible = false;
+                fiveNumLines.IsVisible = false;
+                twentyNumLabel.IsVisible = true;
+                twentyNumLines.IsVisible = true;
+                
             }
             else
             {
@@ -108,6 +114,10 @@ namespace COVID_Mobile.Views
                 MorbidNum_Label.Text = "Recent Deaths: ";
                 this.GraphInfectData.Points = PointLoadUp(true, false);
                 this.GraphMorbidData.Points = PointLoadUp(false, false);
+                twentyNumLabel.IsVisible = false;
+                twentyNumLines.IsVisible = false;
+                fiveNumLabel.IsVisible = true;
+                fiveNumLines.IsVisible = true;
 
             }
         }
@@ -143,7 +153,6 @@ namespace COVID_Mobile.Views
 
             return result;
         }
-        
         private PointCollection DummyMorbidLoad()
         {
             PointCollection morbidPoints = new PointCollection();

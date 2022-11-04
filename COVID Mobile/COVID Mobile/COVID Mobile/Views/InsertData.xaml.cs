@@ -46,7 +46,6 @@ namespace COVID_Mobile.Views
         {
             foreach (var item in places) { LocationPicker.Items.Add(item.ToString()); }
         }
-
         private void Clear_Clicked(object sender, EventArgs e)
         {
             DatePick.Date = DateNow();
@@ -73,7 +72,6 @@ namespace COVID_Mobile.Views
             Notes.Text = "";
 
         }
-
         private void Submit_Clicked(object sender, EventArgs e)
         {
             if (!FormCheck())
@@ -169,7 +167,6 @@ namespace COVID_Mobile.Views
             VariantPickerLoad(variantList.ToList());
             LocationPickerLoad(locationList.ToList());
         }
-
         private void LoadBackIntoFile()
         {
             try
