@@ -79,12 +79,30 @@
             <Label Text="       |    |    |    |     |    |    |    |     |    |    |     |    |    |    |    |    |    |    |   |"
                    TextColor="DarkSlateBlue"
                    Margin="0,355,0,0"
+                   x:Name="twentyNumLines"
                    HorizontalOptions="Center"
+                   IsVisible="false"
                    FontAttributes="Bold"/>
             <Label Text="     20 19 18 17 16 15 14 13 12 11 10   9   8   7   6   5   4   3   2   1"
                    TextColor="DarkSlateBlue"
                    FontSize="13"
                    Margin="0,370,0,0"
+                   x:Name="twentyNumLabel"
+                   HorizontalOptions="Center"
+                   IsVisible="false"
+                   FontAttributes="Bold"/>
+            <Label Text="      |                  |                   |                   |                   |                   |"
+                   TextColor="DarkSlateBlue"
+                   Margin="0,355,0,0"
+                   x:Name="fiveNumLines"
+                   HorizontalOptions="Center"
+                   IsVisible="true"
+                   FontAttributes="Bold"/>
+            <Label Text="      5                  4                   3                    2                    1                   0"
+                   TextColor="DarkSlateBlue"
+                   FontSize="13"
+                   Margin="0,370,0,0"
+                   x:Name="fiveNumLabel"
                    HorizontalOptions="Center"
                    FontAttributes="Bold"/>
             <Label Text="(Days Ago)"
@@ -119,17 +137,17 @@
                    FontSize="Large"
                    Margin="15,620,0,0"/>
             <Label 
-                   Text="- - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - "
+                   Text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
                    TextColor="Black"
                    FontSize="Large"
                    Margin="15,80,0,0"/>
             <Label 
-                   Text="- - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - "
+                   Text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
                    TextColor="Black"
                    FontSize="Large"
                    Margin="15,170,0,0"/>
             <Label 
-                   Text="- - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - "
+                   Text=" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
                    TextColor="Black"
                    FontSize="Large"
                    Margin="15,260,0,0"/>

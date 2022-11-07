@@ -27,7 +27,7 @@ namespace COVID_Mobile.Views
         // Storage for Locations
         ObservableCollection<Place> locationList = new ObservableCollection<Place>();
 
-        //string covidFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "COVID.json");         // COVID JSON File - Used for database purposes
+        //string covidFile = ;         // COVID JSON File - Used for database purposes
         //string variantFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "variants.json");    // Variant JSON File - Used for database purposes
        // string locationFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "locations.json");  // Location JSON File - Used for database purposes
 
@@ -42,14 +42,15 @@ namespace COVID_Mobile.Views
             
             //GraphInfectData.Points = DummyInfectLoad();
             //GraphMorbidData.Points = DummyMorbidLoad();
-            SetTotals();
+            SetTotals(true);
            
 
         }
-        private void SetTotals()
+        private void SetTotals(bool flag)
         {
             double infectTotal = 0;
             double morbidTotal = 0;
+
             foreach(Point point in DummyInfectLoad())
             {
                 point.Deconstruct(out double x, out double y);
@@ -60,9 +61,20 @@ namespace COVID_Mobile.Views
                 point.Deconstruct(out double x, out double y);
                 morbidTotal += y;
             }
+            
 
-            InfectNum_Label.Text = $"Recent Infections: {infectTotal}";
-            MorbidNum_Label.Text = $"Recent Deaths: {morbidTotal}";
+            if (flag)
+            {
+                InfectNum_Label.Text = $"Recent Infections: {infectTotal}";
+                MorbidNum_Label.Text = $"Recent Deaths: {morbidTotal}";
+            }
+            else
+            {
+                InfectNum_Label.Text = $"Total Infection: {infectTotal}";
+                MorbidNum_Label.Text = $"Total Deaths: {morbidTotal}";
+            }
+           
+            
         }
 
         private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -98,8 +110,15 @@ namespace COVID_Mobile.Views
                 GraphTimeToggle_Label.Text = "All Data";
                 InfectNum_Label.Text = "Total Infection: ";
                 MorbidNum_Label.Text = "Total Deaths: ";
-                this.GraphInfectData.Points = PointLoadUp(true, true);
-                this.GraphMorbidData.Points = PointLoadUp(false, true);
+                // UNCOMMENT once more data is embedded in COVIDList
+                this.GraphInfectData.Points = DummyInfectLoad();
+                this.GraphMorbidData.Points = DummyMorbidLoad();
+                fiveNumLabel.IsVisible = false;
+                fiveNumLines.IsVisible = false;
+                twentyNumLabel.IsVisible = true;
+                twentyNumLines.IsVisible = true;
+                SetTotals(false);
+                
             }
             else
             {
@@ -108,7 +127,11 @@ namespace COVID_Mobile.Views
                 MorbidNum_Label.Text = "Recent Deaths: ";
                 this.GraphInfectData.Points = PointLoadUp(true, false);
                 this.GraphMorbidData.Points = PointLoadUp(false, false);
-
+                twentyNumLabel.IsVisible = false;
+                twentyNumLines.IsVisible = false;
+                fiveNumLabel.IsVisible = true;
+                fiveNumLines.IsVisible = true;
+                SetTotals(true);
             }
         }
         private PointCollection PointLoadUp(bool toggleRate, bool toggleTime)
@@ -143,7 +166,6 @@ namespace COVID_Mobile.Views
 
             return result;
         }
-        
         private PointCollection DummyMorbidLoad()
         {
             PointCollection morbidPoints = new PointCollection();
