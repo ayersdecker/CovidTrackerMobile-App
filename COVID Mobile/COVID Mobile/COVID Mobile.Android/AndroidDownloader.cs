@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using Environment = System.Environment;
 
 namespace COVID_Mobile.Droid
 {
@@ -20,7 +21,7 @@ namespace COVID_Mobile.Droid
 
         public void DownloadFile(string url, string folder)
         {
-            string pathToNewFolder = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath, folder);
+            string pathToNewFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), folder);
             Directory.CreateDirectory(pathToNewFolder);
 
             try

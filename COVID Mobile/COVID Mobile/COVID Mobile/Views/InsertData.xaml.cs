@@ -181,11 +181,7 @@ namespace COVID_Mobile.Views
             catch( Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-            
-           
-
-                
+            }         
         }
     }
-}
+} 
