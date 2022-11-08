@@ -45,9 +45,9 @@ namespace COVID_Mobile.Views
 
         private void Report_Export_Clicked(object sender, EventArgs e)
         {
-            IDownloader downloader = DependencyService.Get<IDownloader>();
+           // IDownloader downloader = DependencyService.Get<IDownloader>();
             //TODO <- Export Data within a Generated Report
-            downloader.DownloadFile("http://www.dada-data.net/uploads/image/hausmann_abcd.jpg", "XF_Downloads");
+           // downloader.DownloadFile("http://www.dada-data.net/uploads/image/hausmann_abcd.jpg", "XF_Downloads");
             Navigation.PopAsync();
         }
     }

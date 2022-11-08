@@ -48,6 +48,7 @@ namespace COVID_Mobile.Views
                     EmailEntry.TextColor = Color.Black;
                     PasswordEntry.TextColor = Color.Black;
                     passedObjective = true;
+                    Navigation.PushAsync(new DataPage());
                     Shell.SetTabBarIsVisible(this, true);                    
                 } 
             }
